@@ -2,11 +2,14 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class PlayerDamage : MonoBehaviour
 {
 
     public int playerHealth = 100;
+    public Slider slider;
+    public Image fill;
     // Start is called before the first frame update
     void Start()
     {
@@ -29,6 +32,7 @@ public class PlayerDamage : MonoBehaviour
         {
             Debug.Log("damage");
                 playerHealth = playerHealth - 30;
+            slider.value = playerHealth;
             Debug.Log(playerHealth);
         }
     }
