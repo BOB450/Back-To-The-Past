@@ -14,7 +14,7 @@ public class followPlayer : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        player = GameObject.FindWithTag("player");
+      //  player = GameObject.FindWithTag("Player");
     }
 
     void LateUpdate()
