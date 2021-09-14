@@ -35,5 +35,13 @@ public class PlayerDamage : MonoBehaviour
             slider.value = playerHealth;
             Debug.Log(playerHealth);
         }
+
+        if (collision.gameObject.tag == "enemyBullet")
+        {
+            Debug.Log("damage");
+            playerHealth = playerHealth - 5;
+            slider.value = playerHealth;
+            Debug.Log(playerHealth);
+        }
     }
 }
