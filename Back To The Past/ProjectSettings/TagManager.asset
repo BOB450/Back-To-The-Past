@@ -8,6 +8,7 @@ TagManager:
   - bullet
   - sc
   - enemyBullet
+  - walls
   layers:
   - Default
   - TransparentFX

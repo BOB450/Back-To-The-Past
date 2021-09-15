@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 6757681660290438202}
   - component: {fileID: 6757681660290438207}
   - component: {fileID: 6757681660290438204}
-  - component: {fileID: 5799967674695871979}
+  - component: {fileID: -9199212046621271269}
   m_Layer: 0
   m_Name: BulletEnemy1
   m_TagString: enemyBullet
@@ -29,7 +29,7 @@ Transform:
   m_GameObject: {fileID: 6757681660290438203}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -0.066, y: 1.916, z: -3}
-  m_LocalScale: {x: 1.5, y: 1, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -116,13 +116,13 @@ CapsuleCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0.029344708, y: -0.01565051}
   m_Size: {x: 0.3739819, y: 0.7495923}
   m_Direction: 0
---- !u!114 &5799967674695871979
+--- !u!114 &-9199212046621271269
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -131,6 +131,6 @@ MonoBehaviour:
   m_GameObject: {fileID: 6757681660290438203}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bf1db3e12b9a1244ba88165dc26eb042, type: 3}
+  m_Script: {fileID: 11500000, guid: e9ad98596d958d74baa5aa8f5f07ef56, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 

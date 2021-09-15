@@ -16,6 +16,8 @@ public class BulletScript : MonoBehaviour
         Destroy(gameObject);
     }
 
+
+
     void des()
     {
         Destroy(gameObject);

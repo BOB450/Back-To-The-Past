@@ -12,6 +12,8 @@ public class EnemyAI : MonoBehaviour
     Path path;
     int currentWaypoint = 0;
     bool reachedEndOfPath = false;
+   public bool Shooter;
+    public float dis;
 
     Seeker seeker;
     Rigidbody2D rb;
@@ -65,9 +67,20 @@ public class EnemyAI : MonoBehaviour
 
         Vector2 direction = ((Vector2)path.vectorPath[currentWaypoint] - rb.position).normalized;
 
-        Vector2 force = direction * speed * Time.deltaTime;
+        if (Shooter == true)
+        {
+            if (Vector2.Distance(target.position, rb.position) >= dis)
+            {
+                Vector2 force = direction * speed * Time.deltaTime;
+                rb.AddForce(force);
+            }
+        }
+        if (Shooter == false)
+        {
+            Vector2 force = direction * speed * Time.deltaTime;
 
-        rb.AddForce(force);
+            rb.AddForce(force);
+        }
         float distance = Vector2.Distance(rb.position, path.vectorPath[currentWaypoint]);
         if (distance < nextWaypointDistance)
         {

@@ -44,4 +44,18 @@ public class PlayerDamage : MonoBehaviour
             Debug.Log(playerHealth);
         }
     }
+
+    void OnTriggerEnter2D(Collider2D coll1)
+    {
+
+        if (coll1.gameObject.tag == "enemyBullet")
+        {
+            Debug.Log("damage");
+            playerHealth = playerHealth - 5;
+            slider.value = playerHealth;
+            Debug.Log(playerHealth);
+        }
+
+    }
+
 }
