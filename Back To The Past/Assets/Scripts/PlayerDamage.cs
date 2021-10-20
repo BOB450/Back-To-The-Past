@@ -57,6 +57,10 @@ public class PlayerDamage : MonoBehaviour
             slider.value = playerHealth;
             Debug.Log(playerHealth);
         }
+        if (coll1.gameObject.tag == "exit")
+        {
+            SceneManager.LoadScene(1);
+        }
 
         if (coll1.gameObject.tag == "Hjar")
         {
