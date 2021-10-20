@@ -28,6 +28,8 @@ public class PlayerDamage : MonoBehaviour
 
     void OnCollisionEnter2D(Collision2D collision)
     {
+
+
         if (collision.gameObject.tag == "enemy")
         {
             Debug.Log("damage");
@@ -52,6 +54,23 @@ public class PlayerDamage : MonoBehaviour
         {
             Debug.Log("damage");
             playerHealth = playerHealth - 5;
+            slider.value = playerHealth;
+            Debug.Log(playerHealth);
+        }
+
+        if (coll1.gameObject.tag == "Hjar")
+        {
+            //Debug.Log("Health", playerHealth);
+            
+            if(playerHealth + 20 > 100)
+            {
+                playerHealth = 100;
+            }
+            else
+            {
+                playerHealth = playerHealth + 20;
+            }
+            
             slider.value = playerHealth;
             Debug.Log(playerHealth);
         }

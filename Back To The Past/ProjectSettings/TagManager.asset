@@ -9,6 +9,8 @@ TagManager:
   - sc
   - enemyBullet
   - walls
+  - Hjar
+  - exit
   layers:
   - Default
   - TransparentFX
